@@ -5,12 +5,58 @@
 <body>
     <%-include("parts/header.ejs")  %>
 
-    <h1>
-        <ul>SUCO DE MAÇÃ</ul>
-        <ul>SUCO DE ACABAXI</ul>
-        <ul>SUCO DE MORANGO</ul>
-    </h1>
+    <header class="cabecalho">
+        <!-- <img class= "cabecalho img" src="img/banner.jfif" alt="por do sol"> -->
+    
+        <h1 class="texto-abertura">Aqui começa a nova jornada PROJETO 23</h1>
+    
+        <form class="deep-orange" action="/passagens/busca" method="get">
+          <div>
+            <label>
+              <input type="radio" name="tipoDeBusca">
+              <span>Ida Volta</span>
+            </label>
+            <label>
+              <input type="radio" name="tipoDeBusca">
+              <span>Somente Ida</span>
+            </label>
+            <label>
+              <input type="radio" name="tipoDeBusca">
+              <span>Várias Cidades</span>
+            </label>
+          </div>
+          <label for="nome">De:</label>
+    
+          <label for="nome">Para:</label>
+    
+          <label for="nome">Ida:</label>
+          <input type="date" name="ida" id='Ida'>
+    
+          <label for="nome">Volta:</label>
+          <input type="date" name="volta" id='Volta'>
+    
+          <label for="nome">Classe:</label>
+          <select name="classe" id="classe">
+            <option selected value="1">Economica</option>
+            <option value="2">Executiva</option>
+          </select>
+    
+    
+          <button class="botao-primario" type="submit">BUSCAR>></button>
+    
+    
+        </form>
+    
+      </header>
+    
+      <!-- Ofertas-->
 
+      <div class="content">
+        <div class="slides-carrosel">
+          <div>
+          </div>
+        </div>  
+      </div>  
     <%-include("parts/footer.ejs")  %>
 </body>
 

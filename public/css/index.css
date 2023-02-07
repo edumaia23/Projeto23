@@ -1,0 +1,128 @@
+/* .cabecalho{
+    position: relative;
+    color: white;
+} */
+/* 
+.cabecalho img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 50px;
+} */
+
+
+.cabecalho form{
+    position: absolute;
+    background-color: #ff56227b;
+    width: 100%;
+    padding: 30px;
+    
+       
+}
+
+.texto-abertura{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+
+.botao-primario{
+    color: white;
+    background-color: rgba(82, 228, 91, 0.931);
+    border-color:rgba(64, 184, 72, 0.931) ;
+    padding: 3px 10px;
+    border-radius: 8px;
+    
+
+}
+
+.botao-buscar{
+   position: relative;
+   align-items: left;
+
+
+}
+
+
+.botao-primario:hover{
+    background-color: rgba(18, 146, 26, 0.931);
+}
+
+.botao-secundario{
+    color: white;
+    background-color: #ff5722;
+    border-color: #d6481c ;
+    padding: 3px 10px;
+    border-radius: 8px;
+
+}
+
+.link-secundario{
+    color:#ff5722 ;
+
+}
+
+.link-secundario:hover{
+    color: #d6481c;
+}
+
+.ofertas{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.ofertas img{
+height: 105px;
+
+}
+
+.destinos-card{
+    padding: 16px;
+
+}
+
+.w3-margin-top-0{
+    margin-top: 0;
+}
+
+.calendar {
+    display: flex;
+  }
+  
+  .weekday {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 80px;
+  }
+  
+  .weekday p {
+    text-align: center;
+  }
+  
+  .day {
+    padding: 14px;
+    margin: 0;
+    border: 1px solid black;
+    text-align: center;
+  }
+  
+  .day span {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .day .price {
+    color: green;
+  }
+
+.content {
+    max-width: 980px;
+}
