@@ -1,63 +1,51 @@
 <!DOCTYPE html>
 
-<html lang="pt-br">
-    <%-include("parts/head.ejs")  %>
-<body>
-    <%-include("parts/header.ejs")  %>
+<html>
 
-    <header class="cabecalho">
-        <!-- <img class= "cabecalho img" src="img/banner.jfif" alt="por do sol"> -->
-    
-        <h1 class="texto-abertura">Aqui começa a nova jornada PROJETO 23</h1>
-    
-        <form class="deep-orange" action="/passagens/busca" method="get">
-          <div>
-            <label>
-              <input type="radio" name="tipoDeBusca">
-              <span>Ida Volta</span>
-            </label>
-            <label>
-              <input type="radio" name="tipoDeBusca">
-              <span>Somente Ida</span>
-            </label>
-            <label>
-              <input type="radio" name="tipoDeBusca">
-              <span>Várias Cidades</span>
-            </label>
-          </div>
-          <label for="nome">De:</label>
-    
-          <label for="nome">Para:</label>
-    
+<%-include("parts/head.ejs") %>
+
+  <link rel="stylesheet" href="/css/index.css">
+
+  <%-include("parts/header.ejs") %>
+
+    <div class="formulario-div">
+      <!-- <img class="form-img" src="https://source.unsplash.com/random/?travel" alt="pordosol"> -->
+      <h1 class="texto-abertura">Aqui começa a sua jornada</h1>
+      <form class="formulario" action="/busca" method="get">
+        <div>
+          <label>
+            <input type="radio" name="ida e volta">
+            <span>ida e volta</span>
+          </label>
+          <label>
+            <input type="radio" name="somente ida ">
+            <span>somente ida</span>
+          </label>
+        </div>
+        <div class="form-part2">
+          </select>
+
           <label for="nome">Ida:</label>
           <input type="date" name="ida" id='Ida'>
-    
+
           <label for="nome">Volta:</label>
           <input type="date" name="volta" id='Volta'>
-    
+
           <label for="nome">Classe:</label>
           <select name="classe" id="classe">
             <option selected value="1">Economica</option>
             <option value="2">Executiva</option>
           </select>
-    
-    
-          <button class="botao-primario" type="submit">BUSCAR>></button>
-    
-    
-        </form>
-    
-      </header>
-    
-      <!-- Ofertas-->
 
-      <div class="content">
-        <div class="slides-carrosel">
-          <div>
-          </div>
-        </div>  
-      </div>  
-    <%-include("parts/footer.ejs")  %>
-</body>
+
+          <button class="botao-buscar" type="submit">PESQUISAR</button>
+        </div>
+      </form>
+
+    </div>
+
+    <%-include("parts/footer.ejs") %>
+
+      </body>
 
 </html>
