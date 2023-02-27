@@ -1,14 +1,13 @@
 .footer{
     /*background-color: rgba(128, 128, 128, 0.398); estava assim antes lembrar para o edu*/
-    margin-top: 50px;
+    /* display: flex;
+    position: absolute;
+    margin: 25px; */
     padding: 16px;
-    background-color: #ff56227b
+    background-color: #ff56227b;
 }
 
 .rodape{
-    display: flex;
     align-content: space-around;
     justify-content: space-between;
-    
 }
-
